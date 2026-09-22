@@ -54,7 +54,7 @@ create_annotation <-  function(gtfpath = NULL, txdb = NULL, dataSource = NA, org
   
   if(length(gtfpath) != 0){
     path_to_gtf <- gtfpath
-    txdbanno <- GenomicFeatures::makeTxDbFromGFF(file = path_to_gtf, format = "gtf", dataSource = dataSource, organism = organism)
+    txdbanno <- txdbmaker::makeTxDbFromGFF(file = path_to_gtf, format = "gtf", dataSource = dataSource, organism = organism)
   } else {
     if(txdb %in% rownames(installed.packages())){
       library(txdb, character.only = TRUE)
