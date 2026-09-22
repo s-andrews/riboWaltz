@@ -34,6 +34,7 @@ Imports:
 	ggplot2 (>= 2.2.1),
 	ggrepel (>= 0.6.5),
 	IRanges (>= 2.12.0)
+    txdbmaker (>= 1.8.0)
 biocViews:
 RoxygenNote: 7.3.2
 Roxygen: list(markdown = TRUE)
